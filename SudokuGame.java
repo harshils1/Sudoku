@@ -287,7 +287,7 @@ class SudokuGame extends JPanel implements ActionListener{
 		return false;
 	}
 	
-	private boolean isOk(int row, int col, int number) {
+	private boolean isOk(int row, int col, int number) { //credit to https://gist.github.com/ssaurel
 		return !isInRow(row, number)  &&  !isInCol(col, number)  &&  !isInBox(row, col, number);
 	}
 	
