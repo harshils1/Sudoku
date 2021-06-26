@@ -259,7 +259,7 @@ class SudokuGame extends JPanel implements ActionListener{
 		}
     }
     
-	private boolean isInRow(int row, int number) {
+	private boolean isInRow(int row, int number) { //credit to https://gist.github.com/ssaurel
 		for (int i = 0; i < numRows; i++)
 			if (ans_map[row][i] == number)
 				return true;
@@ -268,7 +268,7 @@ class SudokuGame extends JPanel implements ActionListener{
 	}
 	
 	// we check if a possible number is already in a column
-	private boolean isInCol(int col, int number) {
+	private boolean isInCol(int col, int number) { //credit to https://gist.github.com/ssaurel
 		for (int i = 0; i < numColumns; i++)
 			if (ans_map[i][col] == number)
 				return true;
@@ -277,7 +277,7 @@ class SudokuGame extends JPanel implements ActionListener{
 	}
 	
 	// we check if a possible number is in its 3x3 box
-	private boolean isInBox(int row, int col, int number) {
+	private boolean isInBox(int row, int col, int number) { //credit to https://gist.github.com/ssaurel
 		int r = row - row % (int)(Math.sqrt(numRows));
 		int c = col - col % (int)(Math.sqrt(numRows));
 		
@@ -293,7 +293,7 @@ class SudokuGame extends JPanel implements ActionListener{
 		return !isInRow(row, number)  &&  !isInCol(col, number)  &&  !isInBox(row, col, number);
 	}
 	
-    public boolean solve() {	
+    public boolean solve() {	//credit to https://gist.github.com/ssaurel
         for (int row = 0; row < numRows; row++) {
 			for (int col = 0; col < numColumns; col++) {
 				if (ans_map[row][col] == 0) {
@@ -443,3 +443,4 @@ public static void playsound(String path){
 }
 
 }// end of SudokuGame class
+
