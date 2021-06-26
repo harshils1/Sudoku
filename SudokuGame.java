@@ -267,7 +267,6 @@ class SudokuGame extends JPanel implements ActionListener{
 		return false;
 	}
 	
-	// we check if a possible number is already in a column
 	private boolean isInCol(int col, int number) { //credit to https://gist.github.com/ssaurel
 		for (int i = 0; i < numColumns; i++)
 			if (ans_map[i][col] == number)
@@ -276,7 +275,6 @@ class SudokuGame extends JPanel implements ActionListener{
 		return false;
 	}
 	
-	// we check if a possible number is in its 3x3 box
 	private boolean isInBox(int row, int col, int number) { //credit to https://gist.github.com/ssaurel
 		int r = row - row % (int)(Math.sqrt(numRows));
 		int c = col - col % (int)(Math.sqrt(numRows));
@@ -300,14 +298,14 @@ class SudokuGame extends JPanel implements ActionListener{
 					for (int number = 1; number <= numRows; number++) {
 						if (isOk(row, col, number)) {
 							ans_map[row][col] = number;
-							if (solve()) { // we start backtracking recursively
+							if (solve()) { 
 								return true;
-							} else { // if not a solution, we 0 the cell and we continue
+							} else { 
 								ans_map[row][col] = 0;
 							}
 						}
 					}
-					return false; // we return false
+					return false; 
 				}
 			}
         }
