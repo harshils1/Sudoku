@@ -259,7 +259,7 @@ class SudokuGame extends JPanel implements ActionListener{
 		}
     }
     
-	private boolean isInRow(int row, int number) { //credit to https://gist.github.com/ssaurel
+	private boolean isInRow(int row, int number) { 
 		for (int i = 0; i < numRows; i++)
 			if (ans_map[row][i] == number)
 				return true;
@@ -267,7 +267,7 @@ class SudokuGame extends JPanel implements ActionListener{
 		return false;
 	}
 	
-	private boolean isInCol(int col, int number) { //credit to https://gist.github.com/ssaurel
+	private boolean isInCol(int col, int number) { 
 		for (int i = 0; i < numColumns; i++)
 			if (ans_map[i][col] == number)
 				return true;
@@ -275,7 +275,7 @@ class SudokuGame extends JPanel implements ActionListener{
 		return false;
 	}
 	
-	private boolean isInBox(int row, int col, int number) { //credit to https://gist.github.com/ssaurel
+	private boolean isInBox(int row, int col, int number) { 
 		int r = row - row % (int)(Math.sqrt(numRows));
 		int c = col - col % (int)(Math.sqrt(numRows));
 		
@@ -442,3 +442,4 @@ public static void playsound(String path){
 
 }// end of SudokuGame class
 
+//credit to https://gist.github.com/ssaurel
