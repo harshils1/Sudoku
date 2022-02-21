@@ -1,4 +1,4 @@
-# Harshil Shah's Sudoku Solver:
+# Sudoku Solver:
 
 Hey everyone! You chose to read about my Sudoku Solver repo! Below are some details if you would like to know more about the development process:
 
