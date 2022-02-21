@@ -4,25 +4,25 @@ Hey everyone! You chose to read about my Sudoku Solver repo! Below are some deta
 
 # Why did I make this?: 
 
-Learning Object Oriented Programming (OOP) is necessary in becoming a better programmer. Learning Java, I took it upon myself to apply OOP concepts/principles to a 
+Learning Object Oriented Programming (OOP) is necessary in becoming a better programmer. Learning Java, I took it upon myself to apply OOP concepts/principles to a game since 
+they usually involve many classes which interact together. All this led to the creation of this Sudoku Solver. To push my limits a bit more, I developed this game using GUI from
+Java Swing.
 
 # Technologies/Languages Used:
 
-- React.js for the front-end interface (this includes HTML, CSS, and JavaScript)
-- Google Firebase for storing contact queries
-- Other CSS libraries (Bootstrap for example)
+- Java
+- Java Swing
 
 # Problems/Challenges Faced and What I Learned:
 
-This was essentially my first web-based application. Although I created a portfolio web application before, it was a much simpler one and only used HTML and CSS. As such, there were quite a few problems/challenges I faced:
+If I am being honest, the hardest part was learning about the GUI, not applying OOP principles. Although I learned a lot about polymorphism, inheritance, abstraction, and encapsulation, 
+making a GUI was pretty difficult. However, through reading documentation and watching tutorials, I was able to create my own GUI with sound effects.
 
-1: Learning React.js was a big learning curve. I had no idea what I was getting into, and therefore, was watching a lot of YT tutorials, reading documentation, etc. Eventually, I was able to grasp React concepts (functional/classical components, hooks, client-side routing, array manipulation on a web based application, and more!).  
-
-2: Making my website responsive. Although not difficult (more tedious), it was definitely not as easy as I had expected. Eventually, I used @media targeting to solve this issue.
 
 # What's next?:
 
-I have learned quite a lot just from making this web application. I hope to continuously update my information and improve features as I learn more about web development. 
+I have learned quite a lot about OOP concepts and applying it to a game which has a GUI. I think that I am done with this project for now, but if you (the readers) have any
+ideas as to what I can add, please let me know!
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
