@@ -287,11 +287,11 @@ class SudokuGame extends JPanel implements ActionListener{
 		return false;
 	}
 	
-	private boolean isOk(int row, int col, int number) { //credit to https://gist.github.com/ssaurel
+	private boolean isOk(int row, int col, int number) { 
 		return !isInRow(row, number)  &&  !isInCol(col, number)  &&  !isInBox(row, col, number);
 	}
 	
-    public boolean solve() {	//credit to https://gist.github.com/ssaurel
+    public boolean solve() {	
         for (int row = 0; row < numRows; row++) {
 			for (int col = 0; col < numColumns; col++) {
 				if (ans_map[row][col] == 0) {
@@ -442,4 +442,4 @@ public static void playsound(String path){
 
 }// end of SudokuGame class
 
-//credit to https://gist.github.com/ssaurel
+//credit to https://gist.github.com/ssaurel 
